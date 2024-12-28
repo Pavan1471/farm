@@ -43,6 +43,7 @@ const Login = () => {
         const dataApi = await dataResponse.json()
 
         if(dataApi.success){
+            console.log(dataApi)
             toast.success(dataApi.message)
             navigate('/')
             fetchUserDetails()

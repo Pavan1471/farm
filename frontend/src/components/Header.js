@@ -73,13 +73,24 @@ const Header = () => {
             <div className='flex items-center gap-7'>
             {
                     user?._id && (
-                     <Link to={"/bot"}>
-                      <div className='text-3xl cursor-pointer relative flex justify-center' >
+                  <>
+                      <Link to={"/"}>
+                      <div className='text-1.5xl cursor-pointer relative flex justify-center' >
                         
                         {/* <FaRobot /> */}
+                        Home
                   
                   </div>
                      </Link>
+                    
+                      <div className='text-1.5xl cursor-pointer relative flex justify-center' >
+                        
+                        {/* <FaRobot /> */}
+                        {user?.name}
+                  
+                  </div>
+                    
+                  </>
                     )
                   }
                 
